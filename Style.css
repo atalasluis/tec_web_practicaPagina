@@ -6,11 +6,13 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    /*background-color: #f9f9f9;*/
+    background-color: #E8F5E9;
   }
   
   .navbar {
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: #1E88E5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +45,8 @@
   
   .nav-links a {
     text-decoration: none;
-    color: #333;
+    /*color: #333;*/
+    color: #E8F5E9;
     font-weight: 500;
     transition: color 0.3s ease;
   }
@@ -54,7 +57,7 @@
   
   .login-button a {
     background-color: #e91e63;
-    color: #fff;
+    color: #E8F5E9;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 20px;
@@ -63,5 +66,69 @@
   
   .login-button a:hover {
     background-color: #d81b60;
+  }
+
+  /*main*/
+  
+  .Informacion-seccion{
+    height: 300px;
+    /*background-color: #bbb;*/
+  }
+  /* footer */
+
+  .footer {
+    /*background-color: #333;*/
+    background-color: #403D39;
+    color: #E8F5E9;
+    padding: 40px 20px 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    color: #e91e63;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section a {
+    /*color: #ccc;*/
+    color: #E8F5E9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #E8F5E9;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 0.9rem;
+    color: #E8F5E9;
   }
   
