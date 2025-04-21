@@ -6,11 +6,11 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #E8F5E9;
+    background-color: #FDF0D5;
   }
-  
+  /*navbar*/
   .navbar {
-    background-color: #1E88E5;
+    background-color: #669BBC;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@
   .logo span {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #e91e63;
+    color: #C1121F;
   }
   
   .nav-links {
@@ -43,18 +43,18 @@
   
   .nav-links a {
     text-decoration: none;
-    color: #E8F5E9;
+    color: #FDF0D5;
     font-weight: 500;
     transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
-    color: #e91e63;
+    color: #C1121F;
   }
   
   .login-button a {
-    background-color: #e91e63;
-    color: #E8F5E9;
+    background-color: #C1121F;
+    color: #FDF0D5;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 20px;
@@ -62,19 +62,89 @@
   }
   
   .login-button a:hover {
-    background-color: #d81b60;
+    background-color: #C1121F;
   }
+
+/*navbar responsivo*/
+  /* Esconde el checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #FDF0D5;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #669BBC;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  /* Mostrar el menú cuando el checkbox está activo */
+  .menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .login-button {
+    display: none;
+  }
+}
+
 
   /*main*/
   
   .Informacion-seccion{
-    height: 300px;
+    /*height: 300px;*/
   }
+
+  .video{
+    height: 100vh;
+    width: 100%;
+    background-color: #C1121F;
+  }
+  .categorias{
+    height: 100vh;
+    width: 100%;
+    
+  }
+  .imagen-detalles{
+    height: 100vh;
+    width: 100%;
+    background-color: #C1121F;
+  }
+  .detalles-imagen{
+    height: 100vh;
+    width: 100%;
+  }
+
   /* footer */
 
   .footer {
     background-color: #403D39;
-    color: #E8F5E9;
+    color: #FDF0D5;
     padding: 40px 20px 20px;
     margin-top: 40px;
   }
@@ -95,7 +165,7 @@
   
   .footer-section h3,
   .footer-section h4 {
-    color: #e91e63;
+    color: #C1121F;
     margin-bottom: 10px;
   }
   
@@ -109,20 +179,20 @@
   }
   
   .footer-section a {
-    color: #E8F5E9;
+    color: #FDF0D5;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .footer-section a:hover {
-    color: #E8F5E9;
+    color: #FDF0D5;
   }
   
   .footer-bottom {
     text-align: center;
     padding-top: 20px;
-    border-top: 1px solid #555;
+    /*border-top: 1px solid #555;*/
     font-size: 0.9rem;
-    color: #E8F5E9;
+    color: #FDF0D5;
   }
   
