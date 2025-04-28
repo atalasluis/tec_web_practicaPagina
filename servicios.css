@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #FDF0D5;*/
+  }
+
+/* Portada de Servicios */
+.portada-servicios {
+  background: #FFFFFF;
+  background: linear-gradient(155deg, rgba(255, 255, 255, 1) 0%, rgba(237, 237, 237, 1) 71%, rgba(141, 145, 146, 1) 100%);
+    text-align: center;
+    padding: 100px 20px;
+    color: #28809A;
+  }
+  
+  .portada-servicios h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .portada-servicios p {
+    font-size: 1.2rem;
+    color: #252525;
+  }
+  
+  /* Secciones de servicios */
+  .servicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+  }
+  
+  .servicio:nth-child(even) {
+    background: #28809A;
+  }
+  
+  .servicio-img img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(141, 145, 146,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .servicio-img img:hover {
+    transform: scale(1.05);
+  }
+  
+  .servicio-texto {
+    max-width: 500px;
+  }
+  
+  .servicio-texto h2 {
+    font-size: 2rem;
+    color: #EDEDED;
+    margin-bottom: 10px;
+  }
+  
+  .reverse .servicio-texto h2 {
+    color: #28809A;
+  }
+  
+  .servicio-texto p {
+    font-size: 1rem;
+    color: #252525;
+    line-height: 1.5;
+  }
+  
+  /* Cambiar orden en reverse */
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  

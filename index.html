@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Nav_footer.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
 
 
@@ -21,9 +22,9 @@
       <label for="menu-toggle" class="hamburger">&#9776;</label>
     
       <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Servicios</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
         <li><a href="#">Adopciones</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
@@ -35,10 +36,85 @@
     
 
     <main  class="Informacion-seccion">
-      <div class="video"></div>
-      <div class="categorias"></div>
-      <div class="imagen-detalles"></div>
-      <div class="detalles-imagen"></div>
+      <div class="video">
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="media/video/portada.mp4" type="video/mp4">
+          Tu navegador no soporta videos en HTML5.
+        </video>
+      
+        <div class="hero-overlay">
+          <div class="hero-text-container">
+            <h1 class="hero-title">PetShop</h1>
+            <p class="hero-subtitle">¡Cuidamos a quien más quieres!</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="categorias">
+        <h2>Categorías</h2>
+        <div class="categoria-grid">
+          <div class="categoria">
+            <img src="media/img/perro.jpg" alt="Perros">
+            <p>Perros</p>
+          </div>
+          <div class="categoria">
+            <img src="media/img/gato.jpg" alt="Gatos">
+            <p>Gatos</p>
+          </div>
+          <div class="categoria">
+            <img src="media/img/aves.jpg" alt="Aves">
+            <p>Aves</p>
+          </div>
+          <div class="categoria">
+            <img src="media/img/granja.jpg" alt="Granja">
+            <p>Granja</p>
+          </div>
+          <div class="categoria">
+            <img src="media/img/exoticos.jpg" alt="Exóticos">
+            <p>Exóticos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="servicios">
+        <div class="servicio-contenido">
+          <div class="servicio-texto">
+            <h2>Servicios para tu mascota</h2>
+            <p>En PetShop ofrecemos servicios pensados en el bienestar y felicidad de tu mascota, como:</p>
+            <ul>
+              <li>Baño y peluquería</li>
+              <li>Atención veterinaria</li>
+              <li>Guardería y hospedaje</li>
+              <li>Entrenamiento básico</li>
+              <li>Nutrición especializada</li>
+            </ul>
+          </div>
+          <div class="servicio-imagen">
+            <img src="media/img/pexels-mikhail-nilov-7469214.jpg" alt="Servicios para mascotas">
+          </div>
+        </div>
+      </div>
+
+      <div class="servicios">
+        <div class="servicio-contenido">
+          <div class="servicio-imagen">
+            <img src="media/img/istockphoto-1320314988-612x612.jpg" alt="Servicios para mascotas">
+          </div>
+          <div class="servicio-texto2">
+            <h2>Servicios para tu mascota</h2>
+            <p>En PetShop ofrecemos Productos pensados en el bienestar y felicidad de tu mascota, como:</p>
+            <ul>
+              <li>Comida en Diferentes Presentaciones</li>
+              <li>Productos de Aseo y Cuidado del Pelo</li>
+              <li>Diversos Juguetes</li>
+              <li>Cepillos para Diferentes Tipo de Pelo</li>
+              <li>Transportines de Diferentes Tamaños</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer class="footer">
@@ -52,9 +128,9 @@
         <div class="footer-section">
           <h4>Enlaces rápidos</h4>
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
             <li><a href="#">Adopciones</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>

@@ -1,0 +1,167 @@
+/*navbar*/
+.navbar {
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(141,145,146,0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28809A;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #28809A;
+    background-color: #EDEDED;
+    padding: 20px 5px;
+    /*padding: 24px 3px;*/
+    border-radius: 10px;
+    box-shadow: rgba(40, 128, 154, 1) 0px 2px 7px, rgba(40, 128, 154, 0.3) 0px 7px 13px -3px, rgba(40, 128, 154, 0.2) 0px -3px 0px inset;
+  }
+  
+  .login-button a {
+    background-color: #8D9192;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button a:hover {
+    background-color: #28809A;
+    color: #EDEDED;
+  }
+
+/*navbar responsivo*/
+  /* Esconde el checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    /*left: 0;*/
+    right: 0;
+    width: 12vh;
+    background-color: #8D9192;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  /* Mostrar el menú cuando el checkbox está activo */
+  .menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .login-button {
+    display: none;
+  }
+}
+
+/* footer */
+
+.footer {
+    background-color: #252525;
+    color: #FFFFFF;
+    padding: 40px 20px 20px;
+    /*margin-top: 40px;*/
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    color: #28809A;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #28809A;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    /*border-top: 1px solid #EDEDED;*/
+    font-size: 0.9rem;
+    color: #FFFFFF;
+  }
